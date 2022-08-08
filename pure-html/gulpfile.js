@@ -1,15 +1,6 @@
-const gulp = require('gulp');
-const postcss = require('gulp-postcss');
-const sass = require('gulp-dart-sass');
+const gulp = require("gulp");
+const { TailwindRegistry, CleanRegistry } = require("@jswork/gulp-registry");
+const reg1 = new TailwindRegistry({src: "./styles/index.scss", dst: "./public/",});
+const reg2 = new CleanRegistry({ target: "./public/" });
 
-function processTailwind() {
-  return (
-    gulp
-      .src('./styles/index.scss')
-      .pipe(sass())
-      .pipe(postcss())
-      .pipe(gulp.dest('./public/'))
-  );
-}
-
-gulp.task('tailwind', processTailwind);
+[reg1, reg2].forEach((reg) => gulp.registry(reg));
