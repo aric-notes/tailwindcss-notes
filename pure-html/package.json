@@ -16,6 +16,6 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "@jswork/gulp-registry": "github:afeiship/gulp-registry"
+    "@jswork/gulp-registry": "github:afeiship/gulp-registry#efef777661c2c9caf47fba48c88b54d3151c6a8e"
   }
 }
