@@ -2,8 +2,10 @@
   "name": "pure-html",
   "version": "1.0.0",
   "description": "Pure html.",
-  "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev:tailwind": "gulp dev:tailwind",
+    "build:tailwind": "gulp build:tailwind"
+  },
   "author": "afeiship",
   "license": "MIT",
   "devDependencies": {
@@ -11,11 +13,11 @@
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-postcss": "^9.0.1",
+    "gulp-sass-glob": "^1.1.0",
     "postcss": "^8.4.16",
-    "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "@jswork/gulp-registry": "github:afeiship/gulp-registry#efef777661c2c9caf47fba48c88b54d3151c6a8e"
+    "@jswork/gulp-registry": "^1.0.26"
   }
 }
