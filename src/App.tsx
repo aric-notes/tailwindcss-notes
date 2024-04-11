@@ -1,6 +1,7 @@
 import GridList from './components/grid-list';
 import VarComp from './components/var-comp';
 import ChildVariant from './components/child-variant';
+import TwSubChild from './components/tw-sub-child';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <VarComp level="3" />
       </div>
       <ChildVariant />
+      <TwSubChild />
     </div>
   );
 }
