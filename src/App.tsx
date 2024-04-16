@@ -6,6 +6,7 @@ import TwSubChild from './components/tw-sub-child';
 function App() {
   return (
     <div className="mx-auto mt-20 flex w-1/2 flex-col bg-gray-200 p-10">
+      <h1 className="text-2xl">Hello World</h1>
       <p className="z1">
         App<sup className="z2 f8">1.0.0</sup>
       </p>
