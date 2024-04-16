@@ -1,5 +1,8 @@
+import twPresets from '@jswork/presets-tailwind';
+
 /** @type {import('tailwindcss').Config} */
 export default {
+  presets: [twPresets],
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {}
@@ -19,18 +22,18 @@ export default {
       addVariant('child', '& > *');
       addVariant('child-hover', '& > *:hover');
     },
-    function ({ addUtilities }) {
-      addUtilities(
-        (() => {
-          let utilities = {};
-          Array.from({ length: 100 }, (_, i) => i + 1).forEach((i) => {
-            utilities[`.f${i}`] = { fontSize: `${i}px` };
-          });
-          return utilities;
-        })(),
-        ['responsive']
-      );
-    },
+    // function ({ addUtilities }) {
+    //   addUtilities(
+    //     (() => {
+    //       let utilities = {};
+    //       Array.from({ length: 100 }, (_, i) => i + 1).forEach((i) => {
+    //         utilities[`.f${i}`] = { fontSize: `${i}px` };
+    //       });
+    //       return utilities;
+    //     })(),
+    //     ['responsive']
+    //   );
+    // },
     // add z1-10
     function ({ addUtilities }) {
       addUtilities(() => {
