@@ -6,6 +6,9 @@ import TwSubChild from './components/tw-sub-child';
 function App() {
   return (
     <div className="mx-auto mt-20 flex w-1/2 flex-col bg-gray-200 p-10">
+      <p className="z1">
+        App<sup className="z2 f8">1.0.0</sup>
+      </p>
       <GridList>
         <div className="grid-item">item1</div>
         <div className="grid-item">item1</div>
