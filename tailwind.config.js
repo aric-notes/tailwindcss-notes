@@ -43,6 +43,17 @@ export default {
         });
         return utilities;
       });
+    },
+    function (pluginConfig) {
+      const { addComponents } = pluginConfig;
+      return addComponents({
+        // last-child margin-bottom:0;
+        '.mb_': {
+          '> *:last-child': {
+            marginBottom: 0
+          }
+        }
+      });
     }
   ]
 };

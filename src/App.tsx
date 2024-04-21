@@ -24,6 +24,13 @@ function App() {
       </div>
       <ChildVariant />
       <TwSubChild />
+
+      <div className="mb_ border border-solid border-slate-500 *:mb-2">
+        <button className="btn">Button</button>
+        <button className="btn">Button</button>
+        <button className="btn">Button</button>
+        <button className="btn">Button</button>
+      </div>
     </div>
   );
 }
