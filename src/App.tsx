@@ -2,6 +2,7 @@ import GridList from './components/grid-list';
 import VarComp from './components/var-comp';
 import ChildVariant from './components/child-variant';
 import TwSubChild from './components/tw-sub-child';
+import FlexGap from './components/flex-gap';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         <button className="btn">Button</button>
         <button className="btn">Button</button>
       </div>
+      <hr />
+      <FlexGap />
     </div>
   );
 }
