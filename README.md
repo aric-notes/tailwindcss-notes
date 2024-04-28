@@ -1,5 +1,5 @@
-# react-ts
-> A React project.
+# tailwindcss-notes
+> Notes on using Tailwind CSS in React projects.
 
 ## template
 ```sh

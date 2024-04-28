@@ -3,6 +3,7 @@ import VarComp from './components/var-comp';
 import ChildVariant from './components/child-variant';
 import TwSubChild from './components/tw-sub-child';
 import FlexGap from './components/flex-gap';
+import LayoutTrbla from './components/layout-trbla.tsx';
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
       </div>
       <hr />
       <FlexGap />
+      <hr />
+      <LayoutTrbla />
     </div>
   );
 }
