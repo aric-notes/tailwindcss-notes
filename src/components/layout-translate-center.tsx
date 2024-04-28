@@ -7,21 +7,21 @@
 export default () => {
   return (
     <>
-      <div className="debug-red relative block size-80">
+      <div className="debug-red relative size-80">
         <h1>Dialog center</h1>
-        <div className="layout-translate-center absolute size-16 rounded-xl bg-green-400">
+        <div className="layout-translate-center fcc absolute size-16 rounded-xl bg-green-400 text-white">
           center
         </div>
       </div>
-      <div className="debug-red relative block size-80">
+      <div className="debug-red relative size-80">
         <h1>Layout Translate Center</h1>
-        <div className="layout-translate-center-xy absolute size-16 rounded-xl bg-amber-400">
+        <div className="layout-translate-center-xy fcc absolute size-16 rounded-xl bg-amber-400 text-white">
           xy
         </div>
-        <div className="layout-translate-center-y absolute size-16 rounded-full bg-blue-400">
+        <div className="layout-translate-center-y fcc absolute size-16 rounded-full bg-blue-400 text-white">
           y
         </div>
-        <div className="layout-translate-center-x absolute top-0 size-16 rounded-3xl bg-red-400">
+        <div className="layout-translate-center-x fcc absolute top-0 size-16 rounded-3xl bg-red-400 text-white">
           x
         </div>
       </div>
