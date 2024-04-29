@@ -5,7 +5,7 @@ import TwSubChild from './components/tw-sub-child';
 import FlexGap from './components/flex-gap';
 import LayoutTrbla from './components/layout-trbla.tsx';
 import LayoutAbsCenter from './components/layout-abs-center.tsx';
-import LayoutTranslateCenter from './components/layout-translate-center.tsx';
+import LayoutTranslateCenter from './components/layout-trans-center.tsx';
 
 function App() {
   return (
