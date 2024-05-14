@@ -3,7 +3,7 @@ import VarComp from './components/var-comp';
 import ChildVariant from './components/child-variant';
 import TwSubChild from './components/tw-sub-child';
 import FlexGap from './components/flex-gap';
-import LayoutTrbla from './components/layout-trbla.tsx';
+import LayoutTrbla from './components/layout-flex.tsx';
 import LayoutAbsCenter from './components/layout-abs-center.tsx';
 import LayoutTranslateCenter from './components/layout-trans-center.tsx';
 import ShortcutsCorner from './components/shortcuts-corner.tsx';
