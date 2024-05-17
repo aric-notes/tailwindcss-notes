@@ -7,6 +7,7 @@ import LayoutTrbla from './components/layout-flex.tsx';
 import LayoutAbsCenter from './components/layout-abs-center.tsx';
 import LayoutTranslateCenter from './components/layout-trans-center.tsx';
 import ShortcutsCorner from './components/shortcuts-corner.tsx';
+import Blanks from './components/blanks.tsx';
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
       <LayoutTranslateCenter />
       <hr />
       <ShortcutsCorner />
+      <hr />
+      <Blanks />
     </div>
   );
 }
