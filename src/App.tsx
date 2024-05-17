@@ -7,13 +7,14 @@ import LayoutTrbla from './components/layout-flex.tsx';
 import LayoutAbsCenter from './components/layout-abs-center.tsx';
 import LayoutTranslateCenter from './components/layout-trans-center.tsx';
 import ShortcutsCorner from './components/shortcuts-corner.tsx';
+import LhComponents from './components/lh-components.tsx';
 
 function App() {
   return (
     <div className="mx-auto mt-20 flex w-1/2 flex-col bg-gray-200 p-10">
       <h1 className="text-2xl">Hello World</h1>
       <p className="z1">
-        App<sup className="z2 f8">1.0.0</sup>
+        App<sup className="f8 z2">1.0.0</sup>
       </p>
       <GridList>
         <div className="grid-item">item1</div>
@@ -46,6 +47,8 @@ function App() {
       <LayoutTranslateCenter />
       <hr />
       <ShortcutsCorner />
+      <hr />
+      <LhComponents />
     </div>
   );
 }
