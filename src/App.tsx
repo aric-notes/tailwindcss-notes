@@ -8,6 +8,7 @@ import LayoutAbsCenter from './components/layout-abs-center.tsx';
 import LayoutTranslateCenter from './components/layout-trans-center.tsx';
 import ShortcutsCorner from './components/shortcuts-corner.tsx';
 import Blanks from './components/blanks.tsx';
+import FullSpacings from './components/full-spacings.tsx';
 
 function App() {
   return (
@@ -49,6 +50,8 @@ function App() {
       <ShortcutsCorner />
       <hr />
       <Blanks />
+      <hr />
+      <FullSpacings />
     </div>
   );
 }
