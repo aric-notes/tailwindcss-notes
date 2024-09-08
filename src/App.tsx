@@ -10,10 +10,12 @@ import ShortcutsCorner from './components/shortcuts-corner.tsx';
 import LhComponents from './components/lh-components.tsx';
 import Blanks from './components/blanks.tsx';
 import FullSpacings from './components/full-spacings.tsx';
+import FfDemo from './components/ff-demo.tsx';
 
 function App() {
   return (
     <div className="mx-auto mt-20 flex w-1/2 flex-col bg-gray-200 p-10">
+      <FfDemo />
       <h1 className="text-2xl">Hello World</h1>
       <p className="z1">
         App<sup className="f8 z2">1.0.0</sup>

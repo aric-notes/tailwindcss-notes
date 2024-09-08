@@ -5,7 +5,13 @@ export default {
   presets: [twPresets],
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        cn: ['PingFang SC', 'Microsoft YaHei', 'sans-serif'],
+        en: ['Impact'],
+        num: ['Times New Roman']
+      }
+    }
   },
   plugins: [
     function ({ addBase }) {
