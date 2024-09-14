@@ -16,8 +16,13 @@ import WithPropsDemo from './components/with-props-demo.tsx';
 function App() {
   return (
     <div className="mx-auto mt-20 flex w-1/2 flex-col bg-gray-200 p-10">
-      <WithPropsDemo />
-      <WithPropsDemo name="aric" age={18} />
+      <div className="debug-red y-2">
+        <WithPropsDemo title="With Props Dem1o" />
+        <WithPropsDemo
+          title="With Props Dem2o"
+          description="This is a description 12345"
+        />
+      </div>
       <FfDemo />
       <h1 className="text-2xl">Hello World</h1>
       <p className="z1">

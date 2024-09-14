@@ -1,23 +1,48 @@
-import React, { ComponentType } from 'react';
+import withProps from '@jswork/with-props';
+import { FC } from 'react';
 
-const withProps = (WrappedComponent: ComponentType, props: any) => {
-  return class extends React.Component {
-    render() {
-      return <WrappedComponent {...props} {...this.props} />;
-    }
-  };
-};
+// Define a simple functional component
+interface MyComponentProps {
+  title: string;
+  description?: string;
+}
 
-const MyComponent = ({ name, age }: any) => {
+const MyComponent: FC<MyComponentProps> = ({ title, description }) => {
   return (
     <div>
-      My name is {name} and I am {age} years old
+      <h1>{title}</h1>
+      {description && <p>{description}</p>}
     </div>
   );
 };
 
-MyComponent.withProps = withProps;
+// Create the enhanced component using withProps and add withProps method
+const EnhancedMyComponent = withProps<MyComponentProps>(
+  { description: 'Default description' },
+  MyComponent
+) as FC<MyComponentProps> & {
+  withProps: (defaultProps: Partial<MyComponentProps>) => FC<MyComponentProps>;
+};
 
-const MyEnhancedComponent = withProps(MyComponent, { name: 'John', age: 30 });
+// Add the withProps method to the enhanced component
+EnhancedMyComponent.withProps = (defaultProps: Partial<MyComponentProps>) => {
+  return withProps(defaultProps, MyComponent);
+};
 
-export default MyEnhancedComponent;
+export default EnhancedMyComponent;
+
+// Usage example of EnhancedMyComponent with withProps
+// const ExampleUsage = () => {
+//   const CustomizedComponent = EnhancedMyComponent.withProps({
+//     description: 'Overridden default description'
+//   });
+//
+//   return (
+//     <>
+//       <EnhancedMyComponent title="Hello World" />
+//       <CustomizedComponent title="Customized Title" />
+//     </>
+//   );
+// };
+//
+// export default ExampleUsage;

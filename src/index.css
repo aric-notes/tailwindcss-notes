@@ -3,7 +3,14 @@
 @tailwind utilities;
 
 body {
-  font-family: system-ui, -apple-system, Segoe UI, Rototo, Helvetica, Arial, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Rototo,
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 .grid-item {
