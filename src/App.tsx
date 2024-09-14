@@ -11,10 +11,13 @@ import LhComponents from './components/lh-components.tsx';
 import Blanks from './components/blanks.tsx';
 import FullSpacings from './components/full-spacings.tsx';
 import FfDemo from './components/ff-demo.tsx';
+import WithPropsDemo from './components/with-props-demo.tsx';
 
 function App() {
   return (
     <div className="mx-auto mt-20 flex w-1/2 flex-col bg-gray-200 p-10">
+      <WithPropsDemo />
+      <WithPropsDemo name="aric" age={18} />
       <FfDemo />
       <h1 className="text-2xl">Hello World</h1>
       <p className="z1">

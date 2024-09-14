@@ -8,8 +8,8 @@ export default {
     extend: {
       fontFamily: {
         cn: ['PingFang SC', 'Microsoft YaHei', 'sans-serif'],
-        en: ['Impact'],
-        num: ['Times New Roman']
+        en: ['sans-serif'],
+        num: ['sans-serif']
       }
     }
   },
