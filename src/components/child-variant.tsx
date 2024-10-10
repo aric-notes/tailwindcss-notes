@@ -17,7 +17,7 @@ const Anonymous = (props: AnonymousProps) => {
   return (
     <div className={cx(className)} {...restProps}>
       <h1 className="font-bold">child-variant</h1>
-      <ul className="flex flex-col gap-2 child:bg-purple-400 child:px-5">
+      <ul className="child:bg-purple-400 child:px-5 flex flex-col gap-2">
         <li>1</li>
         <li>2</li>
         <li>3</li>
