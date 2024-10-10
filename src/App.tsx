@@ -12,10 +12,11 @@ import Blanks from './components/blanks.tsx';
 import FullSpacings from './components/full-spacings.tsx';
 import FfDemo from './components/ff-demo.tsx';
 import WithPropsDemo from './components/with-props-demo.tsx';
+import FFVariantGroups from './components/ff-variant-groups.tsx';
 
 function App() {
   return (
-    <div className="mx-auto mt-20 flex w-1/2 flex-col bg-gray-200 p-10">
+    <div className="bg-gray-200 p-10">
       <div className="debug-red y-2">
         <WithPropsDemo title="With Props Dem1o" />
         <WithPropsDemo
@@ -24,6 +25,7 @@ function App() {
         />
       </div>
       <FfDemo />
+      <FFVariantGroups />
       <h1 className="text-2xl">Hello World</h1>
       <p className="z1">
         App<sup className="f8 z2">1.0.0</sup>
