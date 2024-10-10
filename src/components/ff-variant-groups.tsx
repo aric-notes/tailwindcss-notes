@@ -2,8 +2,23 @@
  * @Author: aric 1290657123@qq.com
  * @Date: 2024-10-10 16:46:04
  * @LastEditors: aric 1290657123@qq.com
- * @LastEditTime: 2024-10-10 17:44:24
+ * @LastEditTime: 2024-10-10 17:58:36
  */
+
+function tgv(input: string) {
+  // 使用正则表达式匹配断点和样式组
+  const pattern = /(\w+):\(([^)]+)\)/g;
+  return input
+    .replace(pattern, (_, breakpoint, styles) => {
+      // 将样式组转换为单个样式
+      const stylesArray = styles
+        .split(',')
+        .map((style: string) => `${breakpoint}:${style.trim()}`);
+      return stylesArray.join(' ');
+    })
+    .trim();
+}
+
 const FFVariantGroups = () => {
   return (
     <>
@@ -13,7 +28,7 @@ const FFVariantGroups = () => {
       </div>
       <hr />
       <div
-        className={nx.tgv(
+        className={tgv(
           'sm:(debug-red,bg-red-200) md:(debug-blue,bg-blue-200) flex'
         )}>
         <h1>ReportDetail34</h1>
