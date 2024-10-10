@@ -19,6 +19,7 @@
     ]
   },
   "dependencies": {
+    "@jswork/next": "^1.2.6",
     "@jswork/with-props": "^1.0.1",
     "classnames": "^2.5.1",
     "react": "^18.2.0",

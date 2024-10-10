@@ -2,12 +2,8 @@
  * @Author: aric 1290657123@qq.com
  * @Date: 2024-10-10 16:46:04
  * @LastEditors: aric 1290657123@qq.com
- * @LastEditTime: 2024-10-10 17:41:49
+ * @LastEditTime: 2024-10-10 17:44:24
  */
-import createTransformer from 'tailwind-group-variant';
-
-const tgv = createTransformer();
-
 const FFVariantGroups = () => {
   return (
     <>
@@ -17,7 +13,7 @@ const FFVariantGroups = () => {
       </div>
       <hr />
       <div
-        className={tgv(
+        className={nx.tgv(
           'sm:(debug-red,bg-red-200) md:(debug-blue,bg-blue-200) flex'
         )}>
         <h1>ReportDetail34</h1>
