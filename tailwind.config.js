@@ -1,12 +1,12 @@
 import twPresets from '@jswork/presets-tailwind';
-import createTransformer from 'tailwind-group-variant';
+import { twTransform } from '@jswork/tgv-transformer';
 
 /** @type {import('tailwindcss').Config} */
 export default {
   presets: [twPresets],
   content: {
     files: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-    transform: createTransformer()
+    transform: twTransform
   },
   theme: {
     extend: {
