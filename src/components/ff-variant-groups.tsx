@@ -2,8 +2,11 @@
  * @Author: aric 1290657123@qq.com
  * @Date: 2024-10-10 16:46:04
  * @LastEditors: aric 1290657123@qq.com
- * @LastEditTime: 2024-10-10 16:55:17
+ * @LastEditTime: 2024-10-10 17:41:49
  */
+import createTransformer from 'tailwind-group-variant';
+
+const tgv = createTransformer();
 
 const FFVariantGroups = () => {
   return (
@@ -13,7 +16,10 @@ const FFVariantGroups = () => {
         <h1>ReportDetail2</h1>
       </div>
       <hr />
-      <div className="sm:(debug-red bg-red-200) md:(debug-blue bg-blue-200) flex">
+      <div
+        className={tgv(
+          'sm:(debug-red,bg-red-200) md:(debug-blue,bg-blue-200) flex'
+        )}>
         <h1>ReportDetail34</h1>
         <h1>ReportDetail56</h1>
       </div>
