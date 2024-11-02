@@ -10,8 +10,8 @@ interface MyComponentProps {
 const MyComponent: FC<MyComponentProps> = ({ title, description }) => {
   return (
     <div>
-      <h1>{title}</h1>
-      {description && <p>{description}</p>}
+      <p className="mobile:fw-8 desktop:fw-1">{title}</p>
+      {description && <p className="fw-4">{description}</p>}
     </div>
   );
 };
@@ -25,6 +25,7 @@ const EnhancedMyComponent = withProps<MyComponentProps>(
 };
 
 // Add the withProps method to the enhanced component
+// @ts-nocheck
 EnhancedMyComponent.withProps = (defaultProps: Partial<MyComponentProps>) => {
   return withProps(defaultProps, MyComponent);
 };

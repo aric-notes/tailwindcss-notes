@@ -14,6 +14,10 @@ export default {
         cn: ['PingFang SC', 'Microsoft YaHei', 'sans-serif'],
         en: ['sans-serif'],
         num: ['sans-serif']
+      },
+      screens: {
+        mobile: '320px',
+        desktop: '1024px'
       }
     }
   },

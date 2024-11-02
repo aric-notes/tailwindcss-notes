@@ -28,6 +28,4 @@ const Anonymous = (props: AnonymousProps) => {
   );
 };
 
-Anonymous.defaultProps = {};
-
 export default Anonymous;

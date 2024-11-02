@@ -39,6 +39,4 @@ const ComponentName = (props: ComponentNameProps) => {
   );
 };
 
-ComponentName.defaultProps = {};
-
 export default ComponentName;
