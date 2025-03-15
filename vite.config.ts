@@ -7,6 +7,7 @@ import babel from '@rollup/plugin-babel';
 export default defineConfig({
   plugins: [
     react(),
+    // 这个是保证 vite dev 开发环境正常的关键
     babel({
       babelHelpers: 'bundled',
       presets: [
@@ -17,6 +18,8 @@ export default defineConfig({
         '@babel/plugin-proposal-nullish-coalescing-operator'
       ]
     }),
+
+    // 这一句是 build 环境正常的关键
     legacy({
       targets: ['defaults', 'ios>=12', 'ChromeAndroid >= 66'],
       additionalLegacyPolyfills: ['core-js/stable'], // 确保引入 `core-js`

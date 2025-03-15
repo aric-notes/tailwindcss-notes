@@ -3,7 +3,7 @@ import { FC } from 'react';
 const Anonymous: FC = () => {
   return (
     <div className="layout-flex-scrollable debug-red h-150 p-5">
-      <header className="h-10 bg-slate-200">HEADER</header>
+      <header className="h-10 bg-slate-200">HEADER 123</header>
       <div className="content is-flex-scrollable-y">
         <p>
           <img
