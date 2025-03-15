@@ -26,9 +26,9 @@ const EnhancedMyComponent = withProps<MyComponentProps>(
 
 // Add the withProps method to the enhanced component
 // @ts-nocheck
-EnhancedMyComponent.withProps = (defaultProps: Partial<MyComponentProps>) => {
-  return withProps(defaultProps, MyComponent);
-};
+// EnhancedMyComponent.withProps = (defaultProps: Partial<MyComponentProps>) => {
+//   return withProps(defaultProps, MyComponent);
+// };
 
 export default EnhancedMyComponent;
 
