@@ -3,16 +3,64 @@
 @tailwind utilities;
 
 body {
-  font-family:
-    system-ui,
-    -apple-system,
-    Segoe UI,
-    Rototo,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: system-ui,
+  -apple-system,
+  Segoe UI,
+  Rototo,
+  Helvetica,
+  Arial,
+  sans-serif;
 }
 
 .grid-item {
   @apply rounded-md border border-solid border-slate-500 bg-gray-200 p-2 shadow transition-colors duration-300 hover:bg-white;
+}
+
+
+.list1 {
+  width: 800px;
+  overflow: hidden; /* 清除浮动，形成 BFC */
+  --gap-x: 20px; /* 水平间距 */
+  --gap-y: 10px; /* 垂直间距 */
+  --num: 3; /* 每行项目数 */
+
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.list1 > div {
+  float: left;
+
+  /* 计算每个项目的宽度：
+     总宽度 = 容器宽度
+     总水平间距 = (--num - 1) * --gap-x
+     所以每个项目宽度 = (100% - 总间距) / --num
+  */
+  width: calc((100% - var(--gap-x) * (var(--num) - 1)) / var(--num));
+  margin-bottom: var(--gap-y);
+}
+
+/* 设置右边距，每行最后一个不加右边距 */
+.list1 > div:not(:nth-child(3n)) {
+  margin-right: var(--gap-x);
+}
+
+/* 可选：如果想更精确控制，可以使用 :nth-child 动态排除最后一个 */
+/* 但由于 CSS 不支持变量在 :nth-child 中直接使用，我们用 JS 或固定值替代 */
+/* 所以这里我们用一个技巧：给每行最后一个元素设置 margin-right: 0 */
+.list1 > div:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* 最后一行：最后 --num 个元素，去除底部间距 */
+/* 每行最后一个：去除右边距 */
+.list1 > div:nth-child(3n) {
+  margin-right: 0;
+  background: lightcoral;
+}
+
+/* 最后一行：最后 --num 个元素，去除底部间距 */
+.list1 > div:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+  background: lightcyan;
 }
