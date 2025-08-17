@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 body {
-  font-family: system-ui,
-  -apple-system,
-  Segoe UI,
-  Rototo,
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Rototo,
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 .grid-item {
   @apply rounded-md border border-solid border-slate-500 bg-gray-200 p-2 shadow transition-colors duration-300 hover:bg-white;
 }
-
 
 .list1 {
   width: 800px;
