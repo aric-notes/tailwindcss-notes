@@ -31,9 +31,7 @@ const ComponentName = (props: ComponentNameProps) => {
   return (
     <div className={cx(className)} {...restProps}>
       <h1 className={cx(bgList[level])}>Hello World</h1>
-      <p className={`bg-red-${100 * Number(level)} text-gray-600`}>
-        tw not work when dynamic!
-      </p>
+      <p className={`bg-red-${100 * Number(level)} text-gray-600`}>tw not work when dynamic!</p>
       {children}
     </div>
   );

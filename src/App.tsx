@@ -74,6 +74,13 @@ function App() {
           <div className="item8">item9</div>
           <div className="item9">item10</div>
         </div>
+        <footer className="fcc">
+          <span className="is-text">关于腾讯</span>
+          <span className="is-line">｜</span>
+          <span className="is-text">服务条款</span>
+          <span className="is-line">｜</span>
+          <span className="is-text">隐私政策</span>
+        </footer>
       </div>
       <LayoutFlexPage />
     </div>
