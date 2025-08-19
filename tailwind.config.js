@@ -1,5 +1,6 @@
 import twPresets from '@jswork/presets-tailwind';
 import { twTransform } from '@jswork/tgv-transformer';
+import TailwindWsui from '@jswork/tailwind-wsui';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -22,6 +23,7 @@ export default {
     }
   },
   plugins: [
+    TailwindWsui,
     // add z1-10
     function ({ addUtilities }) {
       addUtilities(() => {
