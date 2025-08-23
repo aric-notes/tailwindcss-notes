@@ -24,16 +24,7 @@ export default {
   },
   plugins: [
     TailwindWsui,
-    // add z1-10
-    function ({ addUtilities }) {
-      addUtilities(() => {
-        let utilities = {};
-        Array.from({ length: 10 }, (_, i) => i + 1).forEach((i) => {
-          utilities[`.z${i}`] = { zIndex: i };
-        });
-        return utilities;
-      });
-    },
+    // function ({ matchUtilities, theme }) {},
     function (pluginConfig) {
       const { addComponents } = pluginConfig;
       return addComponents({
